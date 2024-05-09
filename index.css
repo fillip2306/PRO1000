@@ -1,0 +1,442 @@
+/* Update the rule to align the navigation bar list to the right */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    overflow-y: scroll; /* Legg til en vertikal scrollbar om nødvendig */
+    overflow-x: hidden ;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 5%;    
+    background-color: #7800f0;
+    width: 100%;
+}
+
+/*
+    background: linear-gradient(255,255,255,0), rgba(255, 255, 255, 0) fixed;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+*/
+
+.logo {
+    cursor: pointer;
+    width: 12%;
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Adjust top and bottom padding */
+}
+
+.nav_links li {
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav_links li a:hover {
+    color: #0088a9; /* Denn må byttes til en farge som passer bakgrunnen*/
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(168, 51, 255);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* NB! Under her, starter den inviduelle delen av siden. Alt over er for navbaren. */
+
+.USNbygg {
+    position: relative; /* Sett forelderposisjon til relativ for å gi absolutt posisjonering til barnet */
+  }
+  
+  .USNbygg h1 {
+    position: absolute;
+    top: 10%; /* Juster top-posisjonen til 50% for å starte sentreringen vertikalt */
+    left: 50%; /* Juster left-posisjonen til 50% for å starte sentreringen horisontalt */
+    transform: translateX(-50%); /* Flytt teksten tilbake med halvparten av sin egen bredde og høyde for å sentrere både horisontalt og vertikalt */
+    color: white;
+    z-index: 1;
+  }
+
+  .USNbygg p {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    z-index: 1;
+    font-size: 20px;
+  }
+  
+  .cws {
+    width: 100%;
+    height: 80vh; /* Bruk hele høyden av skjermen */
+    object-fit: cover; /* Skaler bildet for å dekke hele området */
+    object-position: center; /* Sentrer bildet */
+    position: relative; /* Sørg for at det absoluttposisjonerte bildet er innenfor foreldrecontaineren */
+    margin-bottom: 100px;
+  }
+
+  .knapp {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    color:white;
+    z-index: 1;
+    border-radius: 10px;
+    background-color: rgb(168, 51, 255);
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  .kroa {
+    border: none;
+    height: 500px;
+    width: 100%;    
+    display: flex;
+  }
+
+  .kr {
+    width: 30%;
+    margin-left: 50px;
+    margin-right: 40px;
+    border-radius: 20px;
+    height: 60%;
+  }
+
+  .kroa h1 {
+    left: 35%;    
+    position: absolute;
+    top: 118%;
+    font-size: 20px;
+    flex-grow: 1;
+    border-bottom: 2px solid;
+  }
+
+  .kroa p{
+    margin-top: 130px;
+    padding: 0 20px;
+    flex-grow: 1;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 2;
+  }
+
+  .reviews {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 200px;
+  }
+
+  .cards {
+    border: 2px solid rgba(255, 255, 255, .2); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 25px;
+    width: 700px;
+    /* text-align: center; */
+    margin: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cards p {
+    font-size: 14px;
+    padding-right: 10px;
+    font-style: italic;
+  }
+
+  .three {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .qt1 {
+    position: relative; /* Plasser .qt relativt til den relative .cards-boksen */
+    top: -70px; /* Avstand fra toppen */
+    left: 20px; /* Avstand fra venstre */
+    height: 25px; /* Juster høyden etter behov */
+    width: auto; /* La bredden tilpasses høyden automatisk */
+  }
+
+  .qt2 {
+    position: relative; /* Plasser .qt relativt til den relative .cards-boksen */
+    top: -70px; /* Avstand fra toppen */
+    left: 20px; /* Avstand fra venstre */
+    height: 25px; /* Juster høyden etter behov */
+    width: auto; /* La bredden tilpasses høyden automatisk */
+  }
+
+  .qt3 {
+    position: relative; /* Plasser .qt relativt til den relative .cards-boksen */
+    top: -70px; /* Avstand fra toppen */
+    left: 20px; /* Avstand fra venstre */
+    height: 25px; /* Juster høyden etter behov */
+    width: auto; /* La bredden tilpasses høyden automatisk */
+  }
+  
+  
+  .r1 h2 {
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px; /* Juster avstanden fra bunnen */
+    left: 11%; /* Plasser det i midten */
+    transform: translateX(-50%); /* Sentrer det horisontalt */
+    width: 100%; /* La det ta hele bredden av .cards */
+    text-align: center; /* Sentrer teksten */
+    height: 50px;
+  }
+
+  .r2 h2 {
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px; /* Juster avstanden fra bunnen */
+    left: 44%; /* Plasser det i midten */
+    transform: translateX(-50%); /* Sentrer det horisontalt */
+    width: 100%; /* La det ta hele bredden av .cards */
+    text-align: center; /* Sentrer teksten */
+    height: 50px;
+  }
+
+  .r3 h2 {
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px; /* Juster avstanden fra bunnen */
+    left: 78%; /* Plasser det i midten */
+    transform: translateX(-50%); /* Sentrer det horisontalt */
+    width: 100%; /* La det ta hele bredden av .cards */
+    text-align: center; /* Sentrer teksten */
+    height: 50px;
+  }
+  
+  .pb1 {
+    position: absolute;
+    top: 50%; /* Juster avstanden fra toppen */
+    left: 6%; /* Plasser det 50 piksler til høyre for midten */
+    transform: translateX(-50%); /* Sentrer vertikalt */
+    width: 100%; /* Juster bredden etter behov */
+    height: 270px; /* Juster høyden etter behov */
+    width: 160px;
+  }  
+
+  .pb2 {
+    position: absolute;
+    top: 50%; /* Juster avstanden fra toppen */
+    left: 39.5%; /* Plasser det 50 piksler til høyre for midten */
+    transform: translateX(-50%); /* Sentrer vertikalt */
+    width: 100%; /* Juster bredden etter behov */
+    height: 270px; /* Juster høyden etter behov */
+    width: 160px;
+  }  
+
+  .pb3 {
+    position: absolute;
+    top: 50%; /* Juster avstanden fra toppen */
+    left: 73%; /* Plasser det 50 piksler til høyre for midten */
+    transform: translateX(-50%); /* Sentrer vertikalt */
+    width: 100%; /* Juster bredden etter behov */
+    height: 270px; /* Juster høyden etter behov */
+    width: 160px;
+  }  
+
+  .star1 {
+    position: absolute;
+    top: 73%; /* Juster avstanden fra toppen */
+    left: 26%; /* Plasser det 50 piksler til høyre for midten */
+    transform: translateX(-50%); /* Sentrer vertikalt */
+    width: 100%; /* Juster bredden etter behov */
+    height: 100px; /* Juster høyden etter behov */
+    width: 100px;
+  } 
+  
+  .star2 {
+    position: absolute;
+    top: 73%; /* Juster avstanden fra toppen */
+    left: 60%; /* Plasser det 50 piksler til høyre for midten */
+    transform: translateX(-50%); /* Sentrer vertikalt */
+    width: 100%; /* Juster bredden etter behov */
+    height: 100px; /* Juster høyden etter behov */
+    width: 100px;
+  } 
+
+  .star3 {
+    position: absolute;
+    top: 73%; /* Juster avstanden fra toppen */
+    left: 92%; /* Plasser det 50 piksler til høyre for midten */
+    transform: translateX(-50%); /* Sentrer vertikalt */
+    width: 100%; /* Juster bredden etter behov */
+    height: 100px; /* Juster høyden etter behov */
+    width: 100px;
+  } 
+
+  .reviews h1 {
+    text-align: center;
+    margin-bottom: 100px;
+    font-weight: 100;
+  }
+
+  .medlemmer {
+    position: relative;
+    border: none;
+    background-color:rgb(168, 51, 255);
+    height: 200px;
+    margin-bottom: 0;
+    overflow: hidden;
+    color: black;
+  }
+
+  .medlemmer h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+
+  .felleskapet {
+    display: flex; /* Bruk flexbox */
+    justify-content: center; /* Sentrer innholdet horisontalt */
+    align-items: center; /* Sentrer innholdet vertikalt */
+    flex-wrap: wrap; /* La elementene gå til neste linje hvis det ikke er plass */
+    gap: 20px; /* Legg til mellomrom mellom bildene */
+}
+
+.felleskapet img {
+    max-width: 150px; /* Begrens bredden på bildene for å holde dem proporsjonale */
+    height: auto; /* La høyden skaleres proporsjonalt */
+    margin-top: -150px;
+    display: flex;
+    flex-direction: column;
+}
+
+ 
+
+/* Må vurderes om vi skal ha footer eller ikke på hjemsiden...
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 305px;
+    padding: 50px;   
+    background-color:#7800f0;
+    color: #fff;
+}
+*/
+
+
+@media screen and (max-width: 600px) {
+    
+    .logo {
+        cursor: pointer;
+        width: 30%;
+        margin: 0; /* Remove default margin */
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        padding: 10px 5%;    
+        background-color: #7800f0;
+        width: 100%;
+    }
+
+    .nav_links ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+    }
+
+    li, a{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 10px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    button {
+        padding: 5px 12px;
+        background-color: rgb(168, 51, 255);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        font-size: 10px;
+    }
+
+    .nav_links li {
+        padding: 2px;
+    }
+
+    
+
+    .USNbygg p {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+
+    .knapp p {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        color:white;
+        z-index: 1;
+        border-radius: 5px;
+        background-color: rgb(168, 51, 255);
+        text-align: center;
+        width: 150px;
+        height: 40px;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 15px;
+      }
+
+
+}

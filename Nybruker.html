@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USNStart</title>
+    <link rel="stylesheet" href="Nybruker.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap">
+</head>
+<body>
+    <header>
+        <img class="logo" src="BilderNettsiden/LogoUSN.png" alt="logo">
+        <nav class="nav_links">
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="medlemskap.html">Medlemskap</a></li>
+                <li><a href="OmOss.html">Om Oss</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+                <li><a href="Booking.html">Booking</a></li>
+                <li><a href="fasiliteter.html">Fasiliteter</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="LoggInn.html"><button>Logg inn</button></a>
+    </header>
+
+    <div class="alt">
+        <div class="main">
+            <div class="wrapper">
+                <form action="">
+
+                    <h1>Opprett ny bruker</h1>
+
+                    <div class="input-box">
+                        <input type="text" 
+                        placeholder="Email Adresse" required>
+                        <i class='bx bx-user'></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="navn" 
+                        placeholder="Fullt navn" required>
+                        <i class='bx bx-user'></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" 
+                        placeholder="Passord" required>
+                        <i class='bx bx-lock-alt' ></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" 
+                        placeholder="Gjenta passord" required>
+                        <i class='bx bx-lock-alt' ></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="tall" 
+                        placeholder="Telefonnummer" required>
+                        <i class='bx bx-phone'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" 
+                        placeholder="Adresse" required>
+                        <i class='bx bx-building-house'></i>
+                    </div>
+                    
+        
+                    <div class="Godkjenn">
+                        <label><input type="checkbox"> Jeg erklærer å ha lest vilkårene.</label>
+                    </div>
+                
+        
+                    <div class="Godkjenn">
+                        <label><input type="checkbox"> Ja, jeg vil gjerne motta nyhetsbrev.</label>
+                    </div>
+
+                    <br>
+
+                    <button type="submit" class="btn">Registrer</button>
+        
+                </form>
+        
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var logo = document.querySelector(".logo");
+
+            // Legg til en klikk-lytter på bildet
+            logo.addEventListener("click", function() {
+                // Naviger til den ønskede siden
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+
+</body>
+
+</html>

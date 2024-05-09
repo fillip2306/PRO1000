@@ -1,0 +1,257 @@
+/* Update the rule to align the navigation bar list to the right */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    overflow-y: scroll; /* Legg til en vertikal scrollbar om nødvendig */
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 5%;    
+    background-color: #7800f0;
+    width: 100%;
+}
+
+.logo {
+    cursor: pointer;
+    width: 12%;
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Adjust top and bottom padding */
+}
+
+.nav_links li {
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav_links li a:hover {
+    color: #0088a9; /* Denn må byttes til en farge som passer bakgrunnen*/
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(168, 51, 255);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* NB! Under her, starter den inviduelle delen av siden. Alt over er for navbaren. */
+
+.alt {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+}
+
+.wrapper {
+    width: 70%; /* Set a wider width, for example, 80% of the viewport width */
+    max-width: 600px; /* Optionally, you can set a max-width to prevent it from becoming too wide on larger screens */
+    background: transparent;
+    border: none;
+    padding: 30px 40px;
+}
+
+.overskrift h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.input-box input {
+    /* width: 100%; */
+    /* height: 100%; */
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px 45px 10px 40px;
+}
+
+.input-box input::placeholder {
+    color: #000000;
+}
+
+.wrapper .Godkjenn {
+    display: flex;
+    justify-content: space-between;
+    /* font-size: 14.5px; */
+    /* margin: 15px 0 15px; */
+}
+
+.Godkjenn label input {
+    accent-color: #fff;
+    text-decoration: none;
+}
+
+.Godkjenn:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 5px;
+    transform: translateY(-120%);
+    align-items: center;
+    text-align: center;
+}
+
+.wrapper .btn {
+    width: 50%;
+    height: 45px;
+    /*background-color: #7800f0;*/
+    background-color: rgb(168, 51, 255);
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    
+    color: white;
+    font-weight: 600;
+    margin-top: 50px; 
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 30px;
+    padding: 50px;   
+    background-color: #7800f0;
+    color: #fff;
+}
+.container {
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    margin: -50px auto;
+    border: 2px solid rgba(255, 255, 255, .2); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .logo {
+        cursor: pointer;
+        width: 30%;
+        margin: 0; /* Remove default margin */
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        padding: 10px 5%;    
+        background-color: #7800f0;
+        width: 100%;
+    }
+
+    .nav_links ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+    }
+
+    li, a{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 10px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    button {
+        padding: 5px 12px;
+        background-color: rgb(168, 51, 255);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        font-size: 10px;
+    }
+
+    .nav_links li {
+        padding: 2px;
+    }
+
+    .overskrift h1{
+        font-size: 20px;
+    }
+
+    .overskrift p{
+        font-size: 10px;
+    }
+
+    .input-box p{
+        font-size: 15px;
+    }
+
+    .input-box input {
+        width: 90%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        font-size: 16px;
+        padding: 10px 45px 10px 40px;
+    }
+}
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USNStart</title>
+    <link rel="stylesheet" href="Kontakt.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap">
+</head>
+<body>
+    <header>
+        <img class="logo" src="BilderNettsiden/LogoUSN.png" alt="logo">
+        <nav class="nav_links">
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="medlemskap.html">Medlemskap</a></li>
+                <li><a href="OmOss.html">Om Oss</a></li>
+                <li><a class="active" href="Kontakt.html">Kontakt</a></li>
+                <li><a href="Booking.html">Booking</a></li>
+                <li><a href="fasiliteter.html">Fasiliteter</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="LoggInn.html"><button>Logg inn</button></a>
+    </header>
+
+    
+    <div class="alt">
+        <div class="main">
+            <div class="wrapper">
+                <form action="">
+                    <div class="overskrift">
+                        <h1>La oss fortsette praten.</h1> <br>
+                        <p>Har du spørsmål eller kommentarer? Vi er her for å hjelp deg, <br> så ta gjerne kontakt.</p>
+                    </div>
+                    <br>
+                    <br>
+                <div class="container">
+                    <div class="input-box">
+                        <p>E-post</p>
+                        <input type="text" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <p>Telefonnummer</p>
+                        <input type="tall" required>
+                    </div>
+
+                    <div class="input-box">
+                        <p>Din melding</p>
+                        <input type="text" required>
+                    </div>
+
+                    <div class="Godkjenn">
+                        <label><input type="checkbox"> Ja, jeg vil gjerne holdes oppdatert med StartUSN nyhetsbrevet.</label>
+                    </div>
+                </div>
+
+                    <br>
+
+                    <button type="submit" class="btn">Send inn</button>
+        
+                </form>
+        
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div>Epost: x@startbo.no </div>
+        <div>Adresse: Gullbringvegen 36, 3800 Bø I Telemark </div>
+        <div>Telefon: 46938872</div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var logo = document.querySelector(".logo");
+
+            // Legg til en klikk-lytter på bildet
+            logo.addEventListener("click", function() {
+                // Naviger til den ønskede siden
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+
+</body>
+
+</html>

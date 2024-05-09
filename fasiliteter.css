@@ -1,0 +1,406 @@
+/* Update the rule to align the navigation bar list to the right */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  overflow-y: scroll; /* Legg til en vertikal scrollbar om nødvendig */
+  overflow-x: hidden ;
+}
+
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+  padding: 10px 5%;    
+  background-color: #7800f0;
+  width: 100%;
+}
+
+/*
+  background: linear-gradient(255,255,255,0), rgba(255, 255, 255, 0) fixed;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+*/
+
+.logo {
+  cursor: pointer;
+  width: 12%;
+  margin: 0; /* Remove default margin */
+  padding: 10px; /* Adjust top and bottom padding */
+}
+
+.nav_links li {
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.nav_links li a:hover {
+  color: #0088a9; /* Denn må byttes til en farge som passer bakgrunnen*/
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgb(168, 51, 255);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* NB! Under her, starter den inviduelle delen av siden. Alt over er for navbaren. */
+
+.inkludert {
+  position: relative;
+}
+
+.overskrift h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container {
+  position: relative;
+  border: none;
+  width: 40%;
+  border-radius: 20px;
+  margin-left: 130px;
+  padding: 10px;
+  height: 85vh;
+  margin-top: 50px;
+  background-color:#f2f3f2;  
+}
+
+.container h1 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+.container p {
+  font-size: 15px;
+  margin-left: 60px;
+  margin-top: 5px;
+}
+
+
+#slideshow img{
+  position: absolute;
+  border-radius: 30px;
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(105%);
+  top: 0cm;
+  right: 0cm;
+}
+
+.kontorløsning {
+  position: relative;
+  border: none;
+  width: 40%;
+  border-radius: 20px;
+  margin-left: 130px;
+  padding: 10px;
+  height: 30vh;
+  margin-top: 100px;
+  background-color:#f2f3f2; 
+}
+
+.kontorløsning h1 {
+  font-size: 25px;
+  font-weight: 100;
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align: center;
+}
+.kontorløsning p {
+  font-size: 15px;
+  margin-left: 30px;
+  margin-top: 20px;
+  align-items: center;
+}
+.kontløsbilde {
+  position: absolute;
+  width: 70%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(105%);
+  top: 0cm;
+  right: -0cm;
+  border-radius: 20px;
+}
+
+
+.kontor {
+  position: relative;
+  border: none;
+  width: 40%;
+  border-radius: 20px;
+  margin-left: 130px;
+  padding: 10px;
+  height: 30vh;
+  margin-top: 100px;
+  background-color:#f2f3f2; 
+}
+
+.kontor h1 {
+  font-size: 25px;
+  font-weight: 100;
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align: center;
+}
+.kontor p {
+  font-size: 15px;
+  margin-left: 30px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.kontbilde {
+  position: absolute;
+  width: 70%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(105%);
+  top: 0cm;
+  right: -0cm;
+  border-radius: 20px;
+}
+
+.møterom2 {
+  position: relative;
+  border: none;
+  width: 40%;
+  border-radius: 20px;
+  margin-left: 130px;
+  padding: 10px;
+  height: 30vh;
+  margin-top: 100px;
+  background-color:#f2f3f2;
+}
+
+.møterom2 h1 {
+  font-size: 25px;
+  font-weight: 100;
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align: center;
+}
+.møterom2 p {
+  font-size: 15px;
+  margin-left: 30px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.mtbilde {
+  position: absolute;
+  width: 70%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(105%);
+  top: 0cm;
+  right: -0cm;
+  border-radius: 20px;
+}
+
+.oppholdsrom {
+  position: relative;
+  border: none;
+  width: 40%;
+  border-radius: 20px;
+  margin-left: 130px;
+  padding: 10px;
+  height: 30vh;
+  margin-top: 100px;
+  background-color:#f2f3f2;
+}
+
+.oppholdsrom h1 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align: center;
+}
+.oppholdsrom p {
+  font-size: 15px;
+  margin-left: 30px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.opprom {
+  position: absolute;
+  width: 70%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(105%);
+  top: 0cm;
+  right: -0cm;
+  border-radius: 20px;
+}
+
+.spiseområde2 {
+  position: relative;
+  border: none;
+  width: 40%;
+  border-radius: 20px;
+  margin-left: 130px;
+  padding: 10px;
+  height: 30vh;
+  margin-top: 100px;
+  background-color:#f2f3f2;
+}
+
+.spiseområde2 h1 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align: center;
+}
+.spiseområde2 p {
+  font-size: 15px;
+  margin-left: 30px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.kjøkken {
+  position: absolute;
+  width: 70%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(105%);
+  top: 0cm;
+  right: -0cm;
+  border-radius: 20px;
+}
+
+.printing2 {
+  position: relative;
+  border: none;
+  width: 40%;
+  border-radius: 20px;
+  margin-left: 130px;
+  padding: 10px;
+  height: 30vh;
+  margin-top: 100px;
+  background-color:#f2f3f2; 
+}
+.printing2 h1 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align: center;
+}
+.printing2 p {
+  font-size: 15px;
+  margin-left: 30px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.printer {
+  position: absolute;
+  width: 70%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(105%);
+  top: 0cm;
+  right: -0cm;
+  border-radius: 20px;
+}
+
+.spillerom2 { 
+  position: relative;
+  border: none;
+  width: 40%;
+  border-radius: 20px;
+  margin-left: 130px;
+  padding: 10px;
+  height: 30vh;
+  margin-top: 100px;
+  background-color:#f2f3f2; 
+}
+.spillerom2 h1 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align: center;
+}
+.spillerom2 p {
+  font-size: 15px;
+  margin-left: 30px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.spilling {
+  position: absolute;
+  width: 70%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(105%);
+  top: 0cm;
+  right: -0cm;
+  border-radius: 20px;
+}
+
+.button {
+  margin-top: 45px;
+  width: 40%;
+  height: 40px;
+  background: rgb(168, 51, 255);
+  margin-left: 5px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  transform: translateX(10%);
+}

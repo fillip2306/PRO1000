@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USNStart</title>
+    <link rel="stylesheet" href="LoggInn.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <img class="logo" src="BilderNettsiden/LogoUSN.png" alt="logo">
+        <nav class="nav_links">
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="medlemskap.html">Medlemskap</a></li>
+                <li><a href="OmOss.html">Om Oss</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+                <li><a href="Booking.html">Booking</a></li>
+                <li><a href="fasiliteter.html">Fasiliteter</a></li>
+            </ul>
+        </nav>
+        <a class="active" href="LoggInn.html"><button>Logg inn</button></a>
+    </header>
+
+
+    <div class="alt">
+        <div class="main">
+            <div class="wrapper">
+                <form action="">
+                    <h1>Logg inn</h1>
+                    <div class="input-box">
+                        <input type="text" 
+                        placeholder="Brukernavn" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" 
+                        placeholder="Passord" required>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+                
+        
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="#">Glemt passord?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn">Login</button>
+        
+                    <div class="register-link">
+                        <p>Don't have an account? <a href="Nybruker.html">Registrer</a></p>
+                    </div>
+        
+                </form>
+        
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var logo = document.querySelector(".logo");
+
+            // Legg til en klikk-lytter på bildet
+            logo.addEventListener("click", function() {
+                // Naviger til den ønskede siden
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+
+</body>
+
+</html>
